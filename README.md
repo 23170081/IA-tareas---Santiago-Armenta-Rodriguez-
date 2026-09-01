@@ -1,1 +1,1 @@
-# IA-tareas---Santiago-Armenta-Rodr-guez-
+# IA-tareas---Santiago-Armenta-Rodriguez-
