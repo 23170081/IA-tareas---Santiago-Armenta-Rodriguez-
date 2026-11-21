@@ -2,9 +2,12 @@ import tkinter as tk
 import numpy as np
 from PIL import Image, ImageDraw
 import tensorflow as tf
+import os
 
 # Cargamos el modelo entrenado con MNIST
-model = tf.keras.models.load_model("mlp_model.keras")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "mlp_model.keras")
+model = tf.keras.models.load_model(model_path)
 
 # Tamaño de la ventana de dibujo (en píxeles)
 CANVAS_SIZE = 280
